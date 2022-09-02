@@ -1,2 +1,2 @@
-import "./listeners/addToDo.js";
-import "./listeners/deleteAll.js";
+import './listeners/addToDo.js';
+import './listeners/deleteAll.js';

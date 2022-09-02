@@ -1,6 +1,8 @@
+import { BASE_URL } from '../src/data.js'
+
 export const postTodo = async (todo) => {
   try {
-    const res = await fetch(`https://my-json-server.typicode.com/danielhalasz/M-To-do-list/todos`, {
+    const res = await fetch(`${BASE_URL}/todos`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -10,6 +12,7 @@ export const postTodo = async (todo) => {
 
     // CHECK RES
     if (res.status === 201) {
+      console.log(res)
       return await res.json();
     } else {
       console.log(`Error while posting todo with status : ${res.status}`);

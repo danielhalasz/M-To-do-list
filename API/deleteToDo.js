@@ -1,6 +1,8 @@
+import { BASE_URL } from '../src/data.js'
+
 const deleteTodo = async (id) => {
   try {
-      const res = await fetch(`https://my-json-server.typicode.com/danielhalasz/M-To-do-list/todos/${id}`, {
+      const res = await fetch(`${BASE_URL}/todos/${id}`, {
         method: "DELETE",
       });
 
