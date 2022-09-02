@@ -14,6 +14,6 @@ export const DELETE_ID = 'deleteAll';
 // CLASSES
 export const TODO_CLASS = '.todoList';
 
-export const storage = {
-  array: [],
-};
+// export const storage = {
+//   array: [],
+// };
